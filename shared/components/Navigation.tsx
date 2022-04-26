@@ -10,7 +10,7 @@ export default function Navigation() {
         </a>{" "}
         {/*wird später zum logo*/}
         <div className={styles.div}>
-          <a href="#" className={styles.navItem}>
+          <a href="/about" className={styles.navItem}>
             About
           </a>
           <a href="#" className={styles.navItem}>

@@ -1,0 +1,17 @@
+.background {
+  background-color: rgb(35, 39, 51);
+  min-height: 100vh;
+}
+
+.clr {
+    color: white;
+}
+
+.position {
+    text-align: center;
+}
+
+.normalText {
+    margin-top: 0.5 rem;
+    font-size: 1.3rem;
+}
