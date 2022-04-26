@@ -12,7 +12,20 @@ export default function Home() {
         <meta name="description" content="A Discord bot stealing your valuables." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <main>
         <Navigation />
         <HeroSection />

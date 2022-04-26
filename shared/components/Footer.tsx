@@ -6,7 +6,7 @@ export default function Footer() {
     <Container>
       <footer className={styles.footer}>
         <div className={styles.linkGroup}>
-          <h3>Staff</h3>
+          <h3 className={styles.headline}>Staff</h3>
           <a href="#" className={styles.link}>
             Bot developer
           </a>
@@ -18,11 +18,11 @@ export default function Footer() {
           </a>
         </div>
         <div>
-          <h3>For Business</h3>
+          <h3 className={styles.headline}>For Business</h3>
           <a href="#" className={styles.link}>Get Gnem at a discount</a>
         </div>
         <div>
-          <h3>Contact</h3>
+          <h3 className={styles.headline}>Contact</h3>
           <a href="#" className={styles.link}>fax</a>
           <a href="#" className={styles.link}>E-mail</a>
         </div>

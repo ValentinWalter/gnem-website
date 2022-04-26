@@ -3,11 +3,13 @@ import styles from "@styles/HeroSection.module.css"
 
 export default function HeroSection() {
   return (
-    <Container className={styles.container}>
-      <h1 className={styles.title}>GNEM</h1>
-      <a href="#" className={styles.inviteLink}>
-        Invite
-      </a>
-    </Container>
+    <>
+      <Container className={styles.container}>
+        <img className={styles.logo} src="gnem.png" alt="Gnem" />
+        <a href="#" className={styles.inviteLink}>
+          Invite
+        </a>
+      </Container>
+    </>
   )
 }

@@ -5,7 +5,10 @@ export default function Navigation() {
   return (
     <Container className={styles.container}>
       <nav className={styles.nav}>
-        <a href="#">Gnem</a> {/*wird später zum logo*/}
+        <a href="#">
+          <img className={styles.logo} src="gnem-hat.png" alt="" />
+        </a>{" "}
+        {/*wird später zum logo*/}
         <div className={styles.div}>
           <a href="#" className={styles.navItem}>
             About
