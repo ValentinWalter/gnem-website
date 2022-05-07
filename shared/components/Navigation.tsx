@@ -5,7 +5,7 @@ export default function Navigation() {
   return (
     <Container className={styles.container}>
       <nav className={styles.nav}>
-        <a href="#">
+        <a href="/">
           <img className={styles.logo} src="gnem-hat.png" alt="" />
         </a>{" "}
         {/*wird später zum logo*/}
@@ -13,8 +13,8 @@ export default function Navigation() {
           <a href="/about" className={styles.navItem}>
             About
           </a>
-          <a href="#" className={styles.navItem}>
-            Team
+          <a href="news" className={styles.navItem}>
+            News
           </a>
           <a href="#" className={styles.navItem}>
             Treasury

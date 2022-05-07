@@ -4,8 +4,8 @@ export default function TeamCard(props: { title: String; body: String; image: an
   return (
     <div className={styles.card}>
       <img src={props.image} alt="" />
-      <h1>{props.title}</h1>
-      <p>{props.body}</p>
+      <h1 className={styles.pd}>{props.title}</h1>
+      <p className={styles.pd}>{props.body}</p>
     </div>
   )
 }

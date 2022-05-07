@@ -1,5 +1,4 @@
 .card {
-    max-width: 12rem;
     background-color: rgb(0, 0, 0);
     border-radius: 0.5rem;
     margin: 4rem 2rem;
@@ -7,3 +6,8 @@
     cursor: pointer;
     color: white;
 }
+
+.pd {
+    padding: 1rem ;
+}
+
