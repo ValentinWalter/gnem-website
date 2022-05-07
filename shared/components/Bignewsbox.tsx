@@ -1,4 +1,4 @@
-import styles from "@styles/Bignewsbox.module.css"
+import styles from "@styles/newsbox.module.css"
 
 export default function Bignewsbox(props: { title: String; body: String;}) {
   return (
