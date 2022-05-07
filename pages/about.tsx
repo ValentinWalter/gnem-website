@@ -1,6 +1,6 @@
 import Head from "next/head"
 import Navigation from "@components/Navigation"
-import TeamCard from "@components/teamCard"
+import TeamCard from "@components/TeamCard"
 import Container from "@components/Container"
 
 export default function About() {
