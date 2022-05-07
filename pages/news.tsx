@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Navigation from "@components/Navigation"
-import Bignewsbox from "@components/Bignewsbox"
-import Newsbox from "@components/newsbox"
+import Newsbox from "@components/Newsbox"
+import Container from "@components/Container"
 
 export default function Home() {
   return (
@@ -14,12 +14,14 @@ export default function Home() {
 
       <main>
         <Navigation />
-        <a href="#">
-          <Bignewsbox title={"patch 1.0"} body={"Yeah"} />
-        </a>
-        <a href="#">
-            <Newsbox title={"patch 1.01"} body={"yeah"}/>
-        </a>
+        <Container className="flex flex-col gap-4 max-w-sm">
+          <a href="#">
+            <Newsbox title={"patch 1.0"} body={"Yeah"} big={true} />
+          </a>
+          <a href="#">
+            <Newsbox title={"patch 1.01"} body={"yeah"} />
+          </a>
+        </Container>
       </main>
     </div>
   )

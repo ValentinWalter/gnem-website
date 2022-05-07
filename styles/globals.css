@@ -1,39 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  color: white;
 }
 
 * {
   box-sizing: border-box;
 }
 
-main {
-  margin: 0 auto;
+@layer components {
+  .rotate-scale {
+    @apply hover:rotate-[4deg] hover:scale-110 transition-transform ease-in-out duration-300;
+  }
 }
 
-.container {
-  min-width: 100%;
+/* --- Composition --- */
+
+:where(.container) {
   padding: 0 1rem;
+  max-width: 80ch;
+  margin-inline: auto;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
-
-* {
-  margin: 0px;
-  padding: 0px;
+:where(.container + .container) {
+  margin-top: 5rem;
 }
 
-body {
-  font-family: "Exo", sans-serif;
-}
+/* --- Circles --- */
 
 .area {
   background: #4e54c8;

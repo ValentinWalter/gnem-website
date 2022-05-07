@@ -1,24 +1,16 @@
 import Container from "./Container"
-import styles from "@styles/Navigation.module.css"
 
 export default function Navigation() {
   return (
-    <Container className={styles.container}>
-      <nav className={styles.nav}>
+    <Container>
+      <nav className="flex justify-between mx-4 mt-3 bg-green-300 bg-opacity-40 backdrop-blur-sm rounded-xl py-2 px-4">
         <a href="/">
-          <img className={styles.logo} src="gnem-hat.png" alt="" />
-        </a>{" "}
-        {/*wird später zum logo*/}
-        <div className={styles.div}>
-          <a href="/about" className={styles.navItem}>
-            About
-          </a>
-          <a href="news" className={styles.navItem}>
-            News
-          </a>
-          <a href="#" className={styles.navItem}>
-            Treasury
-          </a>
+          <img width="40" height="40" src="gnem-hat.png" alt="" />
+        </a>
+        <div className="flex gap-4 items-center">
+          <a href="/about">About</a>
+          <a href="news">News</a>
+          <a href="#">Treasury</a>
         </div>
       </nav>
     </Container>

@@ -1,12 +1,14 @@
 import Container from "@components/Container"
-import styles from "@styles/HeroSection.module.css"
 
 export default function HeroSection() {
   return (
     <>
-      <Container className={styles.container}>
-        <img className={styles.logo} src="gnem.png" alt="Gnem" />
-        <a href="#" className={styles.inviteLink}>
+      <Container className="flex flex-col items-center">
+        <img src="gnem.png" alt="Gnem" />
+        <a
+          href="#"
+          className="px-4 py-3 bg-[#00c531] rounded-xl rotate-scale"
+        >
           Invite
         </a>
       </Container>

@@ -1,7 +1,7 @@
 import Head from "next/head"
-import styles from "../styles/about.module.css"
 import Navigation from "@components/Navigation"
 import TeamCard from "@components/teamCard"
+import Container from "@components/Container"
 
 export default function Home() {
   return (
@@ -10,26 +10,42 @@ export default function Home() {
         <title>Gnem | Discord Bot</title>
         <meta name="description" content="A Discord bot stealing your valuables." />
         <link rel="icon" href="/favicon.ico" />
+        <style
+          dangerouslySetInnerHTML={{ __html: "body { background: #3c3a43}" }}
+        ></style>
       </Head>
 
-      <main className={styles.background}>
+      <main>
         <Navigation />
-        <h2 className={`${styles.clr} ${styles.position}`}>About us</h2>
-        <p className={`${styles.clr} ${styles.position} ${styles.normalText} ${styles.space}`}>Our Team was founded due to a school project in 2022.</p>
-        <div className={styles.cards}>
-          <a href="#">
-            <TeamCard title="Backend" body="Backend engeneer, who made the database stuff" image={undefined} />
-          </a>
-          <a href="#">
-            <TeamCard title="Dynamic Guy" body="The man on which is responsible for this project and who helped with aything" image={undefined} />
-          </a>
-          <a href="#">
-            <TeamCard title="Frontend" body="The guy who made this website" image={undefined} />
-          </a>
-          <a href="#">
-            <TeamCard title=""  body="" image={undefined}/>
-          </a>
-        </div>
+        <Container className="flex flex-col gap-6">
+          <header>
+            <h2 className="text-2xl font-bold mb-3">About us</h2>
+            <p className="text-lg">Our Team was founded due to a school project in 2022.</p>
+          </header>
+          <div className="grid grid-cols-3 gap-4">
+            <a href="#">
+              <TeamCard
+                title="Backend"
+                body="Backend engeneer, who made the database stuff"
+                image={undefined}
+              />
+            </a>
+            <a href="#">
+              <TeamCard
+                title="Dynamic Guy"
+                body="The man on which is responsible for this project and who helped with aything"
+                image={undefined}
+              />
+            </a>
+            <a href="#">
+              <TeamCard
+                title="Frontend"
+                body="The guy who made this website"
+                image={undefined}
+              />
+            </a>
+          </div>
+        </Container>
       </main>
     </div>
   )

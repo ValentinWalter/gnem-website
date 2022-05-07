@@ -1,30 +1,23 @@
 import Container from "./Container"
-import styles from "@styles/Footer.module.css"
 
 export default function Footer() {
   return (
-    <Container>
-      <footer className={styles.footer}>
-        <div className={styles.linkGroup}>
-          <h3 className={styles.headline}>Staff</h3>
-          <a href="#" className={styles.link}>
-            Bot developer
-          </a>
-          <a href="#" className={styles.link}>
-            Backend engineer
-          </a>
-          <a href="#" className={styles.link}>
-            Frontend engineer
-          </a>
+    <Container className="border-t border-green-300 pt-4">
+      <footer className="flex mb-4 gap-5">
+        <div>
+          <h3 className="font-bold text-xl">Staff</h3>
+          <p className="opacity-70"><a href="#">Bot developer</a></p>
+          <p className="opacity-70"><a href="#">Backend engineer</a></p>
+          <p className="opacity-70"><a href="#">Frontend engineer</a></p>
         </div>
         <div>
-          <h3 className={styles.headline}>For Business</h3>
-          <a href="#" className={styles.link}>Get Gnem at a discount</a>
+          <h3 className="font-bold text-xl">For Business</h3>
+          <p className="opacity-70"><a href="#">Get Gnem at a discount</a></p>
         </div>
         <div>
-          <h3 className={styles.headline}>Contact</h3>
-          <a href="#" className={styles.link}>fax</a>
-          <a href="#" className={styles.link}>E-mail</a>
+          <h3 className="font-bold text-xl">Contact</h3>
+          <p className="opacity-70"><a href="#">fax</a></p>
+          <p className="opacity-70"><a href="#">E-mail</a></p>
         </div>
       </footer>
     </Container>
