@@ -10,7 +10,7 @@ export default function Navigation() {
         <div className="flex gap-4 items-center">
           <a href="/about">About</a>
           <a href="news">News</a>
-          <a href="#">Treasury</a>
+          <a href="/treassury">Treasury</a>
         </div>
       </nav>
     </Container>

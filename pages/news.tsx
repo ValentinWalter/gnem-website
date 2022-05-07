@@ -3,7 +3,7 @@ import Navigation from "@components/Navigation"
 import Newsbox from "@components/Newsbox"
 import Container from "@components/Container"
 
-export default function Home() {
+export default function News() {
   return (
     <div>
       <Head>

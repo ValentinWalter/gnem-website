@@ -3,7 +3,7 @@ import Navigation from "@components/Navigation"
 import TeamCard from "@components/teamCard"
 import Container from "@components/Container"
 
-export default function Home() {
+export default function About() {
   return (
     <div>
       <Head>
